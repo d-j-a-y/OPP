@@ -1,0 +1,27 @@
+.logo-opp-container {
+	text-align: center;
+	background-image: url("../images/OPP-logo.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.row.header {
+	margin-bottom: 20px;
+}
+
+div.panel h1 {
+	margin-bottom: 20px;
+}
+
+a.download.button {
+	background:#980002;
+}
+
+a.download.button i {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+div.row.features {
+	margin-top: 24px;
+}
