@@ -27,7 +27,7 @@
         <div class="panel">
           <h1>Open Project Player</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis dolorem recusandae, fugiat dolorum optio saepe corrupti ratione nemo ducimus alias, odit maiores quam, laboriosam doloremque rem voluptate similique, nostrum.</p>
-          <a href="#" class="download button large">Télécharger OPP (Mac)</a>
+          <a href="#" class="download button">Télécharger OPP (<span>Mac</span>)</a>
         </div>
       </div>
     </div>
@@ -40,6 +40,19 @@
     </div>
     <script>
     $(document).foundation();
+
+    $(jQuery(document).ready(function($) {
+      if (navigator.appVersion.indexOf("Mac") != -1) {
+        $('.download.button span').text("Mac");
+        $('.download.button').attr("href", "http://cinemaouvert.fr/files/opp-mac.zip");
+      } else if (navigator.appVersion.indexOf("Windows") != -1) {
+        $('.download.button span').text("Windows");
+        $('.download.button').attr("href", "https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/setup_opp.exe");
+      } else {
+        $('.download.button span').text("Linux - Debian");
+        $('.download.button').attr("href", "https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/OPP_1.0-stable_amd64.deb");
+      }
+    }))
     </script>
   </body>
 </html>
