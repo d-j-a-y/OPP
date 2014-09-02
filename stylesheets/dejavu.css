@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'DejaVu';
+    src: url('../fonts/DejaVu/DejaVuSans-Bold-webfont.eot');
+    src: url('../fonts/DejaVu/DejaVuSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVu/DejaVuSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/DejaVu/DejaVuSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVu/DejaVuSans-Bold-webfont.svg#dejavu_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('../fonts/DejaVu/DejaVuSans-BoldOblique-webfont.eot');
+    src: url('../fonts/DejaVu/DejaVuSans-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVu/DejaVuSans-BoldOblique-webfont.woff') format('woff'),
+         url('../fonts/DejaVu/DejaVuSans-BoldOblique-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVu/DejaVuSans-BoldOblique-webfont.svg#dejavu_sansbold_oblique') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('../fonts/DejaVu/DejaVuSans-webfont.eot');
+    src: url('../fonts/DejaVu/DejaVuSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVu/DejaVuSans-webfont.woff') format('woff'),
+         url('../fonts/DejaVu/DejaVuSans-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVu/DejaVuSans-webfont.svg#dejavu_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('../fonts/DejaVu/DejaVuSans-ExtraLight-webfont.eot');
+    src: url('../fonts/DejaVu/DejaVuSans-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVu/DejaVuSans-ExtraLight-webfont.woff') format('woff'),
+         url('../fonts/DejaVu/DejaVuSans-ExtraLight-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVu/DejaVuSans-ExtraLight-webfont.svg#dejavu_sansextralight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('../fonts/DejaVu/DejaVuSans-Oblique-webfont.eot');
+    src: url('../fonts/DejaVu/DejaVuSans-Oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVu/DejaVuSans-Oblique-webfont.woff') format('woff'),
+         url('../fonts/DejaVu/DejaVuSans-Oblique-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVu/DejaVuSans-Oblique-webfont.svg#dejavu_sansoblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+

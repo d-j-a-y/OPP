@@ -1,20 +1,36 @@
-.logo-opp-container {
+* {
+	font-family: "DejaVu", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+
+.logo-opp-container, .coc-guy {
 	text-align: center;
-	background-image: url("../images/OPP-logo.png");
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.logo-opp-container {
+	background-image: url("../images/OPP-logo.png");
+}
+
+.coc-guy {
+	background-image: url("../images/longue-vue.jpg");
+}
+
+.coc-logo {
+	height: 50px;
+	background-image: url("../images/coc-logo.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-top: 15px;
 }
 
 div.row.header {
 	margin-bottom: 20px;
 }
 
-div.panel h1 {
-	margin-bottom: 20px;
-}
-
-a.download.button {
-	background:#980002;
+div.panel .opp-name {
+	margin-bottom: 30px;
 }
 
 a.download.button i {
@@ -24,4 +40,38 @@ a.download.button i {
 
 div.row.features {
 	margin-top: 24px;
+}
+
+.donate-section	{
+	text-align: center;
+}
+
+.donate-section a.button {
+	margin-top: 15px;
+	float: right;
+}
+
+a.download-link:after {
+	content:" - ";
+}
+
+a.download-link:last-of-type:after {
+	content:"";
+}
+
+p.alt-versions {
+	font-size: 80%;
+}
+
+.screenshots h3 {
+	margin-bottom: 30px;
+}
+
+.screenshots li img {
+	border: solid 4px #fff;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+
+.contact-col {
+	min-height: 444px;
 }

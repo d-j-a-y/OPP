@@ -5,38 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Open Projection Player par le Catalogue Ouvert du Cinéma</title>
     
-    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" href="stylesheets/foundation.css">
+    <link rel="stylesheet" href="stylesheets/dejavu.css">
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/general_foundicons.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
+    <script src="//rawgithub.com/noelboss/featherlight/master/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href="//rawgithub.com/noelboss/featherlight/master/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
   </head>
   <body>
     <div class="row header">
-      <div class="small-7 columns"><img src="images/coc-logo.png" height="150" width="749" alt=""></div>
+      <div class="medium-6 columns coc-logo"></div>
+      <div class="medium-6 columns donate-section">
+        <a href="#" class="button small">Faire un don</a>
+      </div>
     </div>
     <div class="row" data-equalizer>
-      <div class="small-6 columns logo-opp-container" data-equalizer-watch></div>
-      <div class="small-6 columns" data-equalizer-watch>
+      <div class="medium-6 columns logo-opp-container" data-equalizer-watch></div>
+      <div class="medium-6 columns" data-equalizer-watch>
         <div class="panel">
-          <h1>Open Project Player</h1>
+          <h2 class="opp-name">Open Projection Player</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis dolorem recusandae, fugiat dolorum optio saepe corrupti ratione nemo ducimus alias, odit maiores quam, laboriosam doloremque rem voluptate similique, nostrum.</p>
-          <a href="#" class="download button">Télécharger OPP (<span>Mac</span>)</a>
+          <a href="#" class="download button expand">Télécharger OPP (<span>Mac</span>)</a>
+          <p class="alt-versions">Autres versions : <a href="http://cinemaouvert.fr/files/opp-mac.zip" class="download-link mac">Mac OSX</a><a class="download-link windows" href="https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/setup_opp.exe">Windows</a><a class="download-link debian" href="https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/OPP_1.0-stable_amd64.deb">Linux (Debian)</a><a class="download-link source" href="https://github.com/cinemaouvert/OPP/archive/master.zip">Source</a></p>
         </div>
       </div>
     </div>
     <div class="row features">
-      <div class="small-8 columns">
-        <h1>Fonctionnalités</h1>
+      <div class="medium-6 columns">
+        <h3>Fonctionnalités</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aperiam expedita magnam excepturi modi pariatur enim iure, rerum, eum dolor, ad nesciunt nobis eius. Sed ex quaerat aut laborum provident!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti architecto dignissimos facere aut, quam quaerat veritatis deserunt odio totam a nemo illo quibusdam veniam consequuntur vero earum nam natus non.</p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+          <li>Feature 5</li>
+          <li>Feature 6</li>
+          <li>Feature 7</li>
+        </ul>
       </div>
-      <div class="small-4 columns"></div>
+      <div class="medium-6 columns screenshots">
+        <h3>Captures d'écran</h3>
+        <ul class="small-block-grid-2">
+          <li><a href="images/screens/win-1.png" data-featherlight="image"><img src="images/screens/win-1-thumb.png" height="1080" width="1920" alt=""></a></li>
+          <li><a href="images/screens/win-2.png" data-featherlight="image"><img src="images/screens/win-2-thumb.png" height="1080" width="1920" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row contact" data-equalizer>
+      <h3>Nous contacter</h3>
+      <div class="medium-6 columns coc-guy" data-equalizer-watch>
+      </div>
+      <div class="small-12 medium-6 columns contact-col" data-equalizer-watch>
+      <div id="form_contact"></div> <script "text/javascript" src="http://nico.frenchlabs.net/form/js.php?key=5383e68534def&lang=fr" ></script>
+      </div>
     </div>
     <script>
     $(document).foundation();
@@ -44,13 +75,15 @@
     $(jQuery(document).ready(function($) {
       if (navigator.appVersion.indexOf("Mac") != -1) {
         $('.download.button span').text("Mac");
-        $('.download.button').attr("href", "http://cinemaouvert.fr/files/opp-mac.zip");
+        $('.download.button').attr("href", $('.download-link.mac').attr('href'));
+        $('.download-link.mac').hide();
       } else if (navigator.appVersion.indexOf("Windows") != -1) {
         $('.download.button span').text("Windows");
-        $('.download.button').attr("href", "https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/setup_opp.exe");
+        $('.download.button').attr("href", $('.download-link.windows'));
+        $('.download-link.windows').hide();
       } else {
         $('.download.button span').text("Linux - Debian");
-        $('.download.button').attr("href", "https://github.com/cinemaouvert/OPP/releases/download/v1.0-stable/OPP_1.0-stable_amd64.deb");
+        $('.download.button').attr("href", $('.download-link.debian'));
       }
     }))
     </script>
