@@ -77,6 +77,6 @@ p.alt-versions {
 	min-height: 444px;
 }
 
-#don {
+body > #don {
 	display: none;
 }
