@@ -76,3 +76,7 @@ p.alt-versions {
 .contact-col {
 	min-height: 444px;
 }
+
+#don {
+	display: none;
+}
