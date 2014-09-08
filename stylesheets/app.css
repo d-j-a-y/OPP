@@ -18,15 +18,21 @@
 }
 
 .coc-logo {
-	height: 50px;
-	background-image: url("../images/coc-logo.png");
+	height: 40px;
+	background-image: url("../images/coc-logo2.png");
 	background-position: left center;
 	background-repeat: no-repeat;
-	margin-top: 15px;
 	text-decoration: none;
 }
 
+body > div.topbar {
+	background: #940000;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
 div.row.header {
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -48,8 +54,11 @@ div.row.features {
 }
 
 .donate-section a.button {
-	margin-top: 15px;
+	height: 40px;
+	margin: 0;
 	float: right;
+	background: white;
+	color: #710000;
 }
 
 a.download-link:after {
