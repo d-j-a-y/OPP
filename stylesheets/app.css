@@ -6,7 +6,7 @@
 .logo-opp-container, .coc-guy {
 	text-align: center;
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: center center;
 }
 
 .logo-opp-container {
@@ -20,7 +20,7 @@
 .coc-logo {
 	height: 50px;
 	background-image: url("../images/coc-logo.png");
-	background-position: center center;
+	background-position: left center;
 	background-repeat: no-repeat;
 	margin-top: 15px;
 	text-decoration: none;
