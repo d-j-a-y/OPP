@@ -90,11 +90,11 @@
         $('.download-link.mac').hide();
       } else if (navigator.appVersion.indexOf("Windows") != -1) {
         $('.download.button span').text("Windows");
-        $('.download.button').attr("href", $('.download-link.windows'));
+        $('.download.button').attr("href", $('.download-link.windows').attr('href'));
         $('.download-link.windows').hide();
       } else {
         $('.download.button span').text("Linux - Debian");
-        $('.download.button').attr("href", $('.download-link.debian'));
+        $('.download.button').attr("href", $('.download-link.debian').attr('href'));
       }
     }))
     </script>
