@@ -1,8 +1,8 @@
-#Intro
+# Intro
 
 Open Projection Program (OPP) is free software for open cinema projection.
 
-#Compilation
+# Compilation
    ###### Pour compiler sous linux : 
    - Récuperer la dernière version du projet sur le git (ajout d'une option de compilation)
    - Installer vlc, libvlccore-dev, libvlc-dev, g++
@@ -37,7 +37,7 @@ Open Projection Program (OPP) is free software for open cinema projection.
    "opp_fr.qm".
    - Il faut ensuite copier ce fichier "opp_fr.qm" dans le répértoire de compilation (release ou debug) à côté du fichier "opp.exe".
 
-#License
+# License
 
 This software is free software published under GPL license.
 
